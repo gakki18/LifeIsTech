@@ -10,6 +10,7 @@
 		6C354F2E1AA1745200A0F94B /* usernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C354F2D1AA1745200A0F94B /* usernameViewController.swift */; };
 		6C48C8571AA2D73E00BBBF40 /* VibrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C48C8561AA2D73E00BBBF40 /* VibrateViewController.swift */; };
 		6C48C8591AA5942C00BBBF40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA814E1A49DA1800E65899 /* Main.storyboard */; };
+		6C48C85B1AA5DD3900BBBF40 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C48C85A1AA5DD3900BBBF40 /* TableViewController.swift */; };
 		6C976E331AA19DA40017BE21 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C976E321AA19DA40017BE21 /* FindViewController.swift */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		6C354F2D1AA1745200A0F94B /* usernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = usernameViewController.swift; path = ../usernameViewController.swift; sourceTree = "<group>"; };
 		6C48C8561AA2D73E00BBBF40 /* VibrateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VibrateViewController.swift; path = ../VibrateViewController.swift; sourceTree = "<group>"; };
+		6C48C85A1AA5DD3900BBBF40 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6C976E321AA19DA40017BE21 /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* ParseStarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseStarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA81491A49DA1800E65899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				6C48C8561AA2D73E00BBBF40 /* VibrateViewController.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
+				6C48C85A1AA5DD3900BBBF40 /* TableViewController.swift */,
 				6C976E321AA19DA40017BE21 /* FindViewController.swift */,
 				C749B2D31A9D114400FE4862 /* Parse.jpg */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
+				6C48C85B1AA5DD3900BBBF40 /* TableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				6C48C8571AA2D73E00BBBF40 /* VibrateViewController.swift in Sources */,
 				6C354F2E1AA1745200A0F94B /* usernameViewController.swift in Sources */,
