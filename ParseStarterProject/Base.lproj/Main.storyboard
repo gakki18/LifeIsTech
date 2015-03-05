@@ -43,9 +43,6 @@
                                     <color key="titleColor" red="0.98528689119684831" green="0.97064621336489043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Wy4-ft-OfM" kind="show" id="oZF-Vs-0wD"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.62558015239797626" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,48 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1010" y="-7"/>
         </scene>
-        <!--Find View Controller-->
-        <scene sceneID="Tla-ki-r4b">
-            <objects>
-                <viewController id="Wy4-ft-OfM" customClass="FindViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RQo-76-IaN"/>
-                        <viewControllerLayoutGuide type="bottom" id="OaX-uG-6OA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yld-e3-kRK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fl7-ZO-3CB">
-                                <rect key="frame" x="0.0" y="70" width="320" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvs-4N-Pha">
-                                <rect key="frame" x="126" y="333" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="dlObjectButton" destination="Wy4-ft-OfM" eventType="touchUpInside" id="rTl-D3-NUG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="friendname" destination="Fl7-ZO-3CB" id="tvA-4Z-eCf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GnQ-zE-yuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="924" y="-686"/>
-        </scene>
-        <!--Vibrate View Controller-->
+        <!--First View Controller-->
         <scene sceneID="Bnz-mc-zEk">
             <objects>
-                <viewController id="nOW-nx-tNC" customClass="VibrateViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nOW-nx-tNC" customClass="FirstViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dw8-hv-O7D"/>
                         <viewControllerLayoutGuide type="bottom" id="Udk-fn-IF2"/>
@@ -156,13 +115,64 @@
                     <view key="view" contentMode="scaleToFill" id="dti-PW-Eq4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oux-dT-rCd">
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jv8-y1-teM">
+                                <rect key="frame" x="258" y="58" width="46" height="30"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMV-zA-hhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="-686"/>
+            <point key="canvasLocation" x="902" y="-654"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="9S3-l9-IRb">
+            <objects>
+                <viewController id="8lj-Ev-E9F" customClass="SecondViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hyu-sB-4S1"/>
+                        <viewControllerLayoutGuide type="bottom" id="jev-nT-dGK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TqP-YN-xDC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="W9j-4a-xSJ">
+                                <rect key="frame" x="0.0" y="56" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oVv-KC-VOf">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVv-KC-VOf" id="jZB-AS-lCB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8lj-Ev-E9F" id="18J-AV-hSd"/>
+                                    <outlet property="delegate" destination="8lj-Ev-E9F" id="aGj-gp-PNa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oh5-iu-Y1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="-647"/>
         </scene>
         <!--Vibrate ViewController-->
         <scene sceneID="H6B-3U-lRu">
