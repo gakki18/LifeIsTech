@@ -8,10 +8,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDataSource ,UITableViewDelegate{
+class SecondViewController: UIViewController, UITableViewDataSource ,UITableViewDelegate{
     
     @IBOutlet weak var tblTasks: UITableView!
-    
+    var idx = -1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,6 +51,11 @@ class FirstViewController: UIViewController, UITableViewDataSource ,UITableViewD
         cell.detailTextLabel!.text = taskMgr.tasks[indexPath.row].desc
         
         return cell
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        idx = indexPath.row
+        performSegueWithIdentifier("toViewController", sender: self)
+        
     }
     
     

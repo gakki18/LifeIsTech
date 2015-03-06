@@ -6,6 +6,9 @@
 //  Copyright (c) 2015年 Parse. All rights reserved.
 //
 
+
+
+//以下は無し↓
 import UIKit
 import AudioToolbox
 

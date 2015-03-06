@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITextFieldDelegate {
+class FirstViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet var txtTask: UITextField!
-    @IBOutlet var txtDesc: UITextField!
+    @IBOutlet var txtTask: UITextField!//
+    @IBOutlet var txtDesc: UITextField!//none
     
     
     override func viewDidLoad() {
@@ -24,13 +24,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //Events
+    //-----以下がdata------
     @IBAction func btnAddTask_Click(sender: UIButton) {
         println("the button was clicked")
         taskMgr.addTask(txtTask.text, desc: txtDesc.text);
         self.view.endEditing(true)
         txtTask.text = ""
-        txtDesc.text = ""
+        txtDesc.text = ""//none
         self.tabBarController?.selectedIndex = 0;
     }
     

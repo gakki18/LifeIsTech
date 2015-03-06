@@ -16,7 +16,6 @@ class usernameViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    //TODO:GameScoreにscore,playerName,cheatModeをそれぞれ保存している GameScoreがない場合は作成する
     @IBAction func upObjectButton(){
         var hoge = PFObject(className:"hoge")
         hoge["username"] = username.text
